@@ -10,27 +10,33 @@
     box-sizing: inherit;
 }
 
+
+
+
+
+html{
+  font-size:80%;
+}
+
+/* @media (max-width: 75em){
+  html{
+    font-size:58%;
+  }
+}
+
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+
 @media (max-width: 28.75em) {
     html {
       font-size:40%;
     }
-  }
+  } */
 
-  @media (max-width: 61.25em) {
-    html {
-      font-size: 58%;
-    }
-  }
 
-@media (max-width: 75em){
-    html{
-      font-size:58%;
-    }
-  }
-
-html{
-    font-size:80%;
-}
 
 
 
@@ -48,7 +54,9 @@ body{
     width:100%;
     background-color:var(--main-red);
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
+    /*gia na paei to logo aristera
+    justify-content:space-between; */
     position:fixed;
     top:0;
     left:0;
@@ -57,12 +65,27 @@ body{
 
 }
 
-@media (max-width: 28.75em){
-    .nav{
-        justify-content:center;
-
-    }
+@media (max-width: 75em){
+  .nav{
+    justify-content:center;
+  }
 }
+
+
+@media (max-width: 61.25em) {
+  .nav{
+    justify-content:center;
+  }
+}
+
+
+@media (max-width: 28.75em){
+  .nav{
+      justify-content:center;
+
+  }
+}
+
 
 
 .logo{
@@ -83,6 +106,24 @@ body{
       transform: rotateY(-360deg);
     }
   }
+
+  @media (max-width: 61.25em) {
+    .logo{
+      width:120px;
+      height:80px;
+      transform: translate(40px,20px);
+    }
+
+    @keyframes rotation {
+      from {
+          transform: translate(40px,20px) rotateY(0deg);    
+      }
+      to {
+          transform: translate(40px,20px) rotateY(360deg);  
+      }
+    }
+  }
+  
 
   @media (max-width: 28.75em){
     .logo{
@@ -116,9 +157,22 @@ body{
     
 }
 
+@media (max-width: 75em){
+  .nav-list a{
+    font-size:2rem;
+  }
+}
+
+@media (max-width: 61.25em) {
+  .nav-list a{
+    font-size:1.5rem;
+  }
+}
+
+
 @media (max-width:28.75em){
     .nav-list a{
-        font-size:0.6em;
+        font-size:1.3rem;
     }
 }
 
@@ -173,6 +227,18 @@ body{
     text-align:center;
 }
 
+@media (max-width: 75em){
+  .welcome-section h1{
+    font-size:6rem;
+  }
+}
+
+@media (max-width: 61.25em){
+  .welcome-section h1{
+    font-size:4rem;
+  }
+}
+
 @media (max-width: 28.75em) {
     .welcome-section h1 {
       font-size:3rem;
@@ -184,6 +250,18 @@ body{
     font-weight:200;
     font-style:italic;
     color:var(--main-red);
+}
+
+@media (max-width: 75em){
+  .welcome-section p{
+    font-size:3rem;
+  }
+}
+
+@media (max-width: 61.25em){
+  .welcome-section p{
+    font-size:1.7rem;
+  }
 }
 
 @media (max-width: 28.75em) {
@@ -209,7 +287,20 @@ body{
     margin:0 auto 6rem auto;
     display:flex;
     justify-content: center;
+    font-size:3.2rem;
     /* border-bottom:0.1rem solid var(--main-gray); */
+}
+
+@media (max-width: 75em){
+  .projects-section h2{
+    font-size:2.7rem;
+  }
+}
+
+@media (max-width: 61.25em){
+  .projects-section h2{
+    font-size:2.2rem;
+  }
 }
 
 @media (max-width: 28.75em) {
@@ -244,8 +335,20 @@ body{
 }
 
 .project-title{
-    font-size:2rem;
+    font-size:2.2rem;
     padding:2rem 0.5rem;
+}
+
+@media (max-width: 75em){
+  .project-title {
+    font-size:1.8rem;
+  }
+}
+
+@media (max-width: 61.25em){
+  .project-title{
+    font-size:1.5rem;
+  }
 }
 
 @media (max-width: 28.75em) {
@@ -296,6 +399,18 @@ body{
     font-size:3rem;
 }
 
+@media (max-width: 75em){
+  .contact-section h3{
+    font-size:2.6rem;
+  }
+}
+
+@media (max-width: 61.25em){
+  .contact-section h3{
+    font-size:2.3rem;
+  }
+}
+
 @media (max-width: 28.75em) {
     .contact-section h3 {
       font-size:2rem;
@@ -315,9 +430,21 @@ body{
     flex-wrap:wrap;
 }
 
+@media (max-width: 75em){
+  .contact-links a{
+    font-size:2.5rem;
+  }
+}
+
+@media (max-width: 61.25em){
+  .contact-links a{
+    font-size:2.2rem;
+  }
+}
+
 @media (max-width: 28.75em) {
-    .contact-links {
-      font-size:1.5rem;
+    .contact-links a{
+      font-size:2rem;
     }
   }
 
@@ -339,11 +466,17 @@ body{
     color:var(--main-gray);
 }
 
+/* @media (max-width: 61.25em){
+  .contact-details {
+    font-size:10rem;
+  }
+}
+
 @media (max-width: 28.75em) {
     .contact-details {
       font-size:2rem;
     }
-  }
+  } */
 
 .contact-details:hover{
     transform:translateY(8px);
@@ -355,13 +488,6 @@ body{
 
 /* FOOTER */
 
-@media (max-width: 28.75em){
-    footer{
-        flex-direction:column;
-        text-align:center;
-    }
-}
-
 footer{
     font-weight:300;
     display:flex;
@@ -370,6 +496,28 @@ footer{
     background:var(--main-gray);
     border-top: 4px solid var(--main-red);
     background-image:linear-gradient(62deg,#3a3d40 0%,#181719 100%);
+}
+
+@media (max-width: 75em){
+  footer{
+    flex-direction:row;
+    text-align:center;
+  }
+}
+
+@media (max-width: 61.25em){
+  footer{
+      flex-direction:row;
+      text-align:center;
+  }
+}
+
+
+@media (max-width: 28.75em){
+    footer{
+        flex-direction:column;
+        text-align:center;
+    }
 }
 
 footer p{
