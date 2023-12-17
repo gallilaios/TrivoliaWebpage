@@ -88,15 +88,15 @@ body{
     .logo{
         width:100px;
         height:60px;
-        transform: translate(40px,30px);
+        transform: translate(50px,30px);
     }
 
     @keyframes rotation {
         from {
-            transform: translate(40px,30px) rotateY(0deg);    
+            transform: translate(50px,30px) rotateY(0deg);    
         }
         to {
-            transform: translate(40px,30px) rotateY(360deg);  
+            transform: translate(50px,30px) rotateY(360deg);  
         }
     }
   }
@@ -188,7 +188,7 @@ body{
 
 @media (max-width: 28.75em) {
     .welcome-section p {
-      font-size:1rem;
+      font-size:1.2rem;
     }
   }
 
@@ -292,12 +292,12 @@ body{
     background:var(--main-black);
 }
 
-.contact-section h2{
+.contact-section h3{
     font-size:3rem;
 }
 
 @media (max-width: 28.75em) {
-    .contact-section h2 {
+    .contact-section h3 {
       font-size:2rem;
     }
   }
