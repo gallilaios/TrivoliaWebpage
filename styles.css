@@ -326,7 +326,9 @@ body{
 .project{
     /* background:var(--main-black); */
     border-radius: 6px;
-    border:2px solid var(--main-red);    
+    border:2px solid var(--main-red); 
+
+    transition: all 0.6s;
 }
 
 .project-image{
@@ -364,7 +366,11 @@ body{
 }
 
 
+/* TILT EFFECT */
 
+.project:hover{
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+}
 
 
 
